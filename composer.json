@@ -1,0 +1,28 @@
+{
+    "name": "sitec/mailer",
+    "description": "Pasarela de correos electrónicos de SiTEC",
+    "type": "project",
+    "authors": 
+    [
+        {
+            "name": "SiTEC",
+            "email": "contacto@sistemasespecializados.com"
+        }
+    ],
+    "license": 
+    [
+        "GPL-3.0-or-later"
+    ],
+    "minimum-stability": "stable",
+    "autoload": 
+    {
+        "psr-4": 
+        {
+            "Mpsoft\\Mailer\\": "src/"
+        }
+    },
+    "require": 
+    {
+        "guzzlehttp/guzzle": "7.0"
+    }
+}
