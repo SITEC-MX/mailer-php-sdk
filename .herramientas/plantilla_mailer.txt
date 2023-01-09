@@ -15,7 +15,7 @@ class Mailer
 {
     private $token = NULL;
 
-    private $host = "mailer.svc-sitec.com";
+    private $host = "mailer.sitec-mx.com";
 
     private $guzzle = NULL;
     private $openapi = NULL;
