@@ -1,7 +1,7 @@
 <?php
 /**
- * Sistemas Especializados e Innovación Tecnológica, SA de CV
- * Mpsoft.Mailer - Pasarela de correos electrónicos de SiTEC
+ * Sistemas Especializados e InnovaciÃ³n TecnolÃ³gica, SA de CV
+ * Mpsoft.Mailer - Pasarela de correos electrÃ³nicos de SiTEC
  *
  * v.2.0.0.0 - 2022-05-19
  */
@@ -49,7 +49,7 @@ class Mailer
                 }
                 else // Si no se proporciona la variable requerida
                 {
-                    throw new Exception("No se proporcionó la variable '{$variable_nombre}'.");
+                    throw new Exception("No se proporcionÃ³ la variable '{$variable_nombre}'.");
                 }
             }
             else // Si no es una variable
@@ -86,7 +86,7 @@ class Mailer
         }
         catch(Throwable $t) // Error al generar la URL de la llamada
         {
-            $estado = array("estado"=>Mailer::ENDPOINT_ERROR_GENERAR, "mensaje"=>"Error al generar la URL de la llamada.", "debug"=> utf8_encode($t->getMessage()));
+            $estado = array("estado"=>Mailer::ENDPOINT_ERROR_GENERAR, "mensaje"=>"Error al generar la URL de la llamada.", "debug"=> $t->getMessage());
         }
 
         if($endpoint_url) // Si se obtiene la URL de la llamada
